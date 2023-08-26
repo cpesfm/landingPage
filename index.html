@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Club de Programación Competitiva</title>
 </head>
 <body>
-    <h1 class="titulo">Landing page CLUB DE PROGRAMACIÓN ESFM PERROS</h1>
+    <header class="header">
+        <div class="wrap-logo">
+            <img src="/CSS/Imags/Logo.png" alt="logo-club" class="header-logo">
+        </div>
+    </header>
+
+    <section class="principal">
+        <div class="wrap-principal">
+            <h1 class="title-principal">Club de Programación Competitiva</h1>
+            <p class="body-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dicta nobis pariatur
+                nulla dolore quia, quam qui eos odio distinctio fugit molestias itaque. Fugit, animi.</p>
+            <button class="cta-a">Botón</button>
+        </div>
+    </section>
+
+    <section class="brand">
+        <div class="wrap-brand">
+            <img src="/" alt="" class="img-brand">
+            <img src="/" alt="" class="img-brand">
+            <img src="/" alt="" class="img-brand">
+            <img src="/" alt="" class="img-brand">
+            <img src="/" alt="" class="img-brand">
+        </div>
+    </section>
+
+    <section class="cursos">
+        <div class="wrap-title-cursos">
+            <h2>Cursos</h2>
+        </div>
+
+        <div class="wrap-img-cursos">
+            <a href="" class="item-img-section">
+                <img src="./CSS/Imags/html-css.jpg" alt="" width="200px"><p>Curso</p></img>
+            </a>
+
+            <a href="" class="item-img-section">
+                <img src="./CSS/Imags/Azure-nube.jpg" alt="" width="200px"><p>Curso</p></img>
+            </a>
+            
+            <a href="" class="item-img-section">
+                <img src="./CSS/Imags/Dados.jpg" alt="" width="200px"><p>Curso</p></img>
+            </a>        
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap-form">
+            <h2>Formulario de contacto</h2>
+        </div>
+
+        <div class="wrap-column">
+            <div>
+                <div>
+                    <h3>Contacta con nosotros</h3>
+
+                    <form action="procesar_formulario.php" method="post" class="form">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required="">
+                        <br><br>
+
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" name="asunto" id="asunto" required="">
+                        <br><br>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <br>
+                        <textarea name="mensaje" id="mensaje" cols="40" rows="4" required=""></textarea>
+                        <br><br>
+
+                        <input type="submit" value="Enviar" class="cta-a">
+                    </form>
+                    
+                </div>
+
+                <div class="wrap-img-column">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap-footer">
+            <div class="wrap-social-media">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="" alt="Facebook" class="social-logo">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="" alt="Twitter" class="social-logo">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="" alt="Instagram" class="social-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-footer">
+            <div class="copyright">
+                <p>copyright 2023 - Club de Programación Competitiva ESFM</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

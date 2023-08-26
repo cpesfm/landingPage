@@ -1,0 +1,62 @@
+:root{
+    --main-c:#fdd72f;
+    --border-r: .2rem;
+}
+
+html *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.wrap-cta{
+    padding: 1.5rem 0;
+}
+
+.cta-a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 0.25rem;
+}
+
+.header-logo{
+    max-width: 35px;
+    height: 100%;
+    width: 100%;
+}
