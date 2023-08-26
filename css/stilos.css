@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 :root {
-    --padding-container: 100px 0;
-    --color-title: #001A49;
+    --borderR: 0.2rem;
 }
 
 html::-webkit-scrollbar {
@@ -17,33 +16,107 @@ html::-webkit-scrollbar-track {
     border-radius: 3px;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    overflow-x: hidden  ;
-}
-
-.tittle{
-    font-family: 'Inter', sans-serif;
+.tittle
+{
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 4rem;
 }
 
-.subtittle{
-    font-family: 'Inter', sans-serif;
+.subtittle
+{
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 3rem;
-}
+}  
 
-.paragraph{
-    font-weight: 400, sans-serif;
-    font-size: 1.5rem;
-    color: #000;
-    padding-top: 2rem;
-}   
+.Tittleh3
+{
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}  
 
 .container {
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
+
+/** ESTILOS GENERALES **/
+
+html *
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p
+{
+    font-size: 1.1rem;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul, li
+{
+    list-style: none;
+}
+
+.wrapCta
+{
+    padding: 1.5rem 0;
+}
+
+.ctaA
+{
+    color: #fff;
+    font-weight: 1.2rem;
+    background-color: black;
+    padding: .5rem 1rem;
+    border-radius: var(--borderR);
+}
+
+/** HEADER **/
+
+.headerLanding
+{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2ff;
+    padding: 0.25rem;
+}
+
+.logoHeader
+{
+    max-width: 55px;
+    height: 100%;
+    width: 100%;
+}
+
+/** HERO SECTION **/
+
+.heroSection
+{
+    height: 90vh;
+    background: url(../static/olaKanagawa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f2f2ff;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+
+.wrapHero
+{
+    max-width: 600px;
+    color: #fff;
+    padding: 10%;
+}
+
