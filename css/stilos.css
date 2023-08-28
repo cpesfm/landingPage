@@ -40,7 +40,7 @@ html::-webkit-scrollbar-track {
 .container {
     width: 100%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 
 /** ESTILOS GENERALES **/
@@ -50,6 +50,8 @@ html *
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: transparent;
 }
 
 p
@@ -76,7 +78,7 @@ ul, li
 {
     color: #fff;
     font-weight: 1.2rem;
-    background-color: black;
+    background-color: #143C3C;
     padding: .5rem 1rem;
     border-radius: var(--borderR);
 }
@@ -87,13 +89,18 @@ ul, li
 {
     display: flex;
     justify-content: center;
-    background-color: #f2f2ff;
+    background-color: transparent;
     padding: 0.25rem;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    top: 0;
+    padding: 2rem 0;
 }
 
 .logoHeader
 {
-    max-width: 55px;
+    max-width: 100px;
     height: 100%;
     width: 100%;
 }
@@ -103,26 +110,240 @@ ul, li
 .heroSection
 {
     height: 90vh;
-    background: url(../static/olaKanagawa.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../static/computer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #f2f2ff;
+    background-color: #f2f2f2;
     background-blend-mode: multiply;
     display: flex;
     align-items: center;
+    
 }
 
 .wrapHero
 {
+    background: transparent;
+    position: relative;
     max-width: 600px;
     color: #fff;
-    padding: 10%;
+    padding: 1%;
+    height: fit-content;
+    bottom: -10%;
 }
 
 /** PHOTOS SECTION **/
 
 .section 
 {
-    
+    margin: 5rem 0;
+
+}
+
+.section h2
+{
+    padding: 2rem 0;
+}
+
+.wrapLogos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 10rem;
+}
+
+.wrapLogos2
+{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 10rem;
+}
+
+.perfil
+{
+    display: block;
+    width: 300px;
+    box-shadow: inset 61px 0px 66px #fff;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #143C3C;
+}
+
+/** TITULOS **/
+
+.wrapTittle
+{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
+}
+
+
+/** SERVICIOS **/ 
+
+.wrapServicios
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.itemServicios
+{
+    padding: 1rem;
+}
+
+.itemServicios img
+{
+    width: 300px;
+    height: 300px;
+}
+
+/** COLUMNAS **/
+
+.columnasSection
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapImg
+{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.tituloh3
+{
+    padding: 2rem 0;
+}
+
+.wrapText p
+{
+    padding-bottom: 1rem ;
+}
+
+/** FORMULARIO **/
+
+section.columnasSection.form
+{
+    background-color: #f2f2f2;
+}
+
+.form input, .form text
+{
+    display: flex;
+    width: 15%;
+    line-height: 1.75rem;
+    border: 1.5px solid black;
+    border: var(--borderR);
+}
+
+.form textarea
+{
+    min-height: 200px;
+}
+
+input[type="submit"]
+{
+    border: 0;
+    display: inline;
+    cursor: pointer;
+}
+
+/** FOOTER **/
+
+.footerSection
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapFooter
+{
+    padding: 1rem 0;
+}
+
+.wrapSocial ul, .wrapMenuFooter
+{
+    display: flex;
+    justify-content: center;
+}
+
+.socialLogo
+{
+    max-width: 75px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.wrapMenuFooter ul li
+{
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.footerCreds
+{
+    display: flex;
+    justify-content: center;
+}
+
+/** PRUEBAS **/
+.price__element{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #696871;
+    --color-price: #1D293F;
+    --bg-cta: #fff;
+    --color-cta: #5454D4;
+    --color-items: #696871;
+}
+
+
+.price__name{
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.price__price{
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+
+.price__items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price__cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
