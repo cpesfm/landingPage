@@ -20,22 +20,31 @@ html::-webkit-scrollbar-track {
 {
     font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3rem;
+    background-color: transparent;
 }
 
 .subtittle
 {
     font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
 }  
 
 .Tittleh3
 {
     font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }  
+
+.paragraph
+{
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: transparent;
+}
 
 .container {
     width: 100%;
@@ -51,7 +60,7 @@ html *
     padding: 0;
     font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
-    background-color: transparent;
+    background-color: #dfdfdf;
 }
 
 p
@@ -72,6 +81,7 @@ ul, li
 .wrapCta
 {
     padding: 1.5rem 0;
+    background-color: transparent;
 }
 
 .ctaA
@@ -103,6 +113,7 @@ ul, li
     max-width: 100px;
     height: 100%;
     width: 100%;
+    background: transparent;
 }
 
 /** HERO SECTION **/
@@ -121,7 +132,6 @@ ul, li
     background-blend-mode: multiply;
     display: flex;
     align-items: center;
-    
 }
 
 .wrapHero
@@ -148,7 +158,12 @@ ul, li
     padding: 2rem 0;
 }
 
-.wrapLogos
+.wrapLogo
+{
+    background-color: transparent;
+}
+
+.wrapPhotos
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -157,7 +172,7 @@ ul, li
     padding: 1rem 10rem;
 }
 
-.wrapLogos2
+.wrapPhotos2
 {
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -245,7 +260,7 @@ section.columnasSection.form
 .form input, .form text
 {
     display: flex;
-    width: 15%;
+    width: 50%;
     line-height: 1.75rem;
     border: 1.5px solid black;
     border: var(--borderR);
