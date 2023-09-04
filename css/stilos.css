@@ -166,20 +166,9 @@ ul, li
 
 .wrapPhotos
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    padding: 1rem 10rem;
-}
-
-.wrapPhotos2
-{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    padding: 1rem 10rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .perfil
