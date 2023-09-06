@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap');
 
 :root {
     --borderR: 0.2rem;
@@ -18,7 +18,7 @@ html::-webkit-scrollbar-track {
 
 .tittle
 {
-    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anonymous Pro',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 3rem;
     background-color: transparent;
@@ -26,21 +26,21 @@ html::-webkit-scrollbar-track {
 
 .subtittle
 {
-    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anonymous Pro',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 2rem;
 }  
 
 .Tittleh3
 {
-    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anonymous Pro',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
 }  
 
 .paragraph
 {
-    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anonymous Pro',Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     background-color: transparent;
@@ -59,7 +59,7 @@ html *
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anonymous Pro',Tahoma, Verdana, sans-serif;
     color: #fff;
     background-color: #dfdfdf;
 }
@@ -162,6 +162,7 @@ ul, li
 .wrapLogo
 {
     background-color: transparent;
+    overflow: hidden;
 }
 
 .wrapPhotos
