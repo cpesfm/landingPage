@@ -61,7 +61,7 @@ html *
     padding: 0;
     font-family: 'Anonymous Pro',Tahoma, Verdana, sans-serif;
     color: #fff;
-    background-color: #dfdfdf;
+    background-color: grey;
 }
 
 p
@@ -184,7 +184,10 @@ ul, li
 
 .itemCursos
 {
+    background-color: #e5e5f7;
     padding:2rem 0;
+    height: 300px;
+    width: 300px;
 }
 
 .cursos
@@ -193,6 +196,7 @@ ul, li
     width: 100%;
     /* box-shadow: inset 61px 0px 66px #fff; */
     height: 100%;
+    background-color: #e5e5f7;
     object-fit: cover;
     /* border: 3px solid #143C3C;*/
 }
