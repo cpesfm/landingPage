@@ -150,7 +150,7 @@ ul, li
 
 .itemPhotos
 {
-    padding: 2rem 13rem;
+    padding: 2rem 11rem;
 }
 
 .section 
@@ -272,12 +272,12 @@ section.columnasSection.form
     width: 50%;
     line-height: 1.75rem;
     border: 1.5px solid black;
-    border: var(--borderR);
 }
 
 .form textarea
 {
     min-height: 200px;
+    border: 1.5px solid black;
 }
 
 input[type="submit"]
