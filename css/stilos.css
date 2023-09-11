@@ -399,14 +399,14 @@ input[type="submit"]
     height: 100vh;
     margin: 0 auto;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-    background-color: black;
+    background-color: #dfdfdf;
     justify-items: center;
 }
 
 .SheroSection
 {
     width: 100%;
-    background-image: url(../static/c++.svg);
+    background-image: url(../static/c++2.svg);
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
