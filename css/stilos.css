@@ -91,7 +91,7 @@ ul, li
     font-weight: 1.2rem;
     background-color: #143C3C;
     padding: .5rem 1rem;
-    border-radius: var(--borderR);
+    border-radius: 10px;
 }
 
 /** HEADER **/
@@ -374,6 +374,20 @@ input[type="submit"]
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
+.btn
+{
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+    width: max-content;
+    color: black;
+    padding: 5px 0;
+    justify-self: center;
+    background-color: white;
+    font-weight: 500;
+}
+
+
 /* HERO COLUMN */ 
 
 .heroColumn
@@ -432,12 +446,13 @@ input[type="submit"]
 
 }
 
-@keyframes typing {
+@keyframes typing
+{
     from{width: 0}
-    
 }
 
-@keyframes blink {
+@keyframes blink
+{
     50% {border-color: transparent;}
 }
 
