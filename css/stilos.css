@@ -438,10 +438,10 @@ input[type="submit"]
     display: block;
     font-size: 15rem;
     background-color: transparent;
-    border-right:4px solid ;
+    border-right:4px solid;
     white-space: nowrap;
     width: 4ch;
-    animation: typing 1s steps(4), blink .5s infinite step-end alternate;
+    animation: typing 1s steps(4), delBorder .5s forwards step-end;
     overflow: hidden;
 
 }
@@ -451,15 +451,40 @@ input[type="submit"]
     from{width: 0}
 }
 
+@keyframes typing-first
+{
+    to{width: 12ch;}
+}
+
+@keyframes typing-second
+{
+    to{width: 11ch;}
+}
+
 @keyframes blink
 {
     50% {border-color: transparent;}
 }
 
+@keyframes delBorder 
+{
+    100% {border-color: transparent;}
+}
+
 .Ssubtittle
 {
     font-size: 5rem;
+    width: 0;
     background-color: transparent;
+    border-right:4px solid;
+}
+
+.Ssubtittle.first {
+    animation: typing-first 1s 1s steps(12) forwards, delBorder .5s forwards step-end;
+}
+
+.Ssubtittle.second {
+    animation: typing-second 1s 2s steps(11) forwards, blink .5s infinite step-end alternate;
 }
 
 .Sparagraph
