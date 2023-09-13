@@ -47,13 +47,14 @@ html {
     width: 100%;
     color: #EEEEEE;
     height: fit-content;
-    padding: 0 .5rem;
+    padding: 0rem 1.5rem;
 }
 
 .heroTextContainer .title {
     display: block;
     overflow: hidden;
     font-size: 6rem;
+    text-transform: uppercase;
     background-color: transparent;
     border-right:4px solid transparent;
     white-space: nowrap;
@@ -62,6 +63,7 @@ html {
 }
 
 .heroTextContainer .subtitle {
+    text-transform: uppercase;
     font-size: 2rem;
     width: 0ch;
     background-color: transparent;
@@ -191,6 +193,48 @@ html {
     color: #334257;
 }
 
+/*  ABOUT US  */
+
+.aboutUs {
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    gap: 1rem;
+    position: relative;
+}
+
+.aboutUs > .title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.aboutUs .aboutUsImg {
+    width: 100%;
+    order: 3;
+    position: relative;
+}
+
+.aboutUs .aboutUsImg img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutUs .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs .textContainer .text {
+    text-align: center;
+}
+
 /*  FOOTER  */
 .footer {
     width: 100vw;
@@ -229,6 +273,12 @@ html {
     .heroContainer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+    }
+
+    /*  ABOUT US  */
+
+    .aboutUs {
+        padding: 2rem;
     }
 }
 
@@ -276,7 +326,7 @@ html {
     
     /*  COURSES  */
     
-    .pastCourses > .title, .activeCourses > .title {
+    .pastCourses > .title, .activeCourses > .title, .aboutUs > .title {
         font-size: 2rem;
     }
 
@@ -287,6 +337,13 @@ html {
     .courseCard .title {
         font-size: 1.5rem;
         height: fil-available;
+    }
+
+    /*  ABOUT US  */
+
+    .aboutUs {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -311,6 +368,56 @@ html {
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    /*  ABOUT US  */
+    
+    .aboutUs{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .aboutUs:nth-of-type(4) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .aboutUs > .title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .aboutUs:nth-of-type(4) .aboutUsImg {
+        width: 49%;
+    }
+    
+    .aboutUs:nth-of-type(2n) .aboutUsImg {
+        order: initial;
+    }
+
+    .aboutUs .aboutUsImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutUs:nth-of-type(5) .aboutUsImg {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .aboutUs:nth-of-type(4) .textContainer {
+        width: 49%;
+    }
+    
+    .aboutUs .textContainer .text {
+        font-size: 1.2rem;
+    }
+
+    .aboutUs:nth-of-type(4) .textContainer .text {
+        text-align: justify;
+    }
+    
 
     /*  FOOTER  */
 
@@ -344,7 +451,7 @@ html {
     
     /*  COURSES  */
     
-    .activeCourses, .pastCourses {
+    .activeCourses, .pastCourses, .aboutUs {
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -353,7 +460,7 @@ html {
         width: calc(33% - 2rem);
     }
 
-    .pastCourses > .title, .activeCourses > .title {
+    .pastCourses > .title, .activeCourses > .title, .aboutUs > .title {
         font-size: 2.5rem;
     }
 
@@ -367,6 +474,12 @@ html {
 
     .courseCard .description, .courseCard .button {
         font-size: 1.2rem;
+    }
+
+    /*  ABOUT US  */
+    
+    .aboutUs .textContainer .text {
+        font-size: 1.3rem;
     }
     
 }
@@ -389,9 +502,15 @@ html {
 
     /*  COURSES  */
     
-    .activeCourses, .pastCourses {
+    .activeCourses, .pastCourses, .aboutUs {
         padding-left: 15%;
         padding-right: 15%;
+    }
+
+   /*  ABOUT US  */
+    
+    .aboutUs .textContainer .text {
+        font-size: 1.5rem;
     }
 
     /*  FOOTER  */
@@ -423,7 +542,7 @@ html {
 
     /*  COURSES  */
 
-    .pastCourses > .title, .activeCourses > .title {
+    .pastCourses > .title, .activeCourses > .title, .aboutUs > .title {
         font-size: 3rem;
     }
 
@@ -438,6 +557,13 @@ html {
     .courseCard .description, .courseCard .button {
         font-size: 1.5rem;
     }
+
+    /*  ABOUT US  */
+    
+    .aboutUs .textContainer .text {
+        font-size: 1.8rem;
+    }
+
 }
 
 @media screen and (min-width: 2000px) {
@@ -475,7 +601,7 @@ html {
 
     /*  COURSES  */
 
-    .pastCourses > .title, .activeCourses > .title {
+    .pastCourses > .title, .activeCourses > .title, .aboutUs > .title {
         font-size: 3.5rem;
     }
 
@@ -489,6 +615,12 @@ html {
 
     .courseCard .description, .courseCard .button {
         font-size: 1.8rem;
+    }
+
+    /*  ABOUT US  */
+    
+    .aboutUs .textContainer .text {
+        font-size: 2rem;
     }
 }
 
