@@ -88,12 +88,15 @@ html {
     width: 100%;
     height: 100%;
     margin-top: .5rem;
-    background-image: url(../static/logo-white.svg);
-    fill: #EEEEEE;
-    background-color: transparent;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+}
+
+.heroContainer .logo img {
+    height: auto;
+    width: 60%;
+    right: 10%;
+    top: 0;
+    position: absolute;
 }
 
 
@@ -169,6 +172,7 @@ html {
 .courseCard .description {
     text-align: center;
     font-size: 1rem;
+    width: 80%;
 }
 
 .courseCard .button {
@@ -200,7 +204,7 @@ html {
 
 .footer .social {
     display: grid;
-    width: 100%;
+    width: 70%;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
@@ -225,9 +229,12 @@ html {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-
-    .heroContainer .logo {
-        background-position: top center;
+    
+    .heroContainer .logo img {
+        height: auto;
+        width: 100%;
+        right: 0;
+        top: 10%;
     }
 }
 
@@ -239,14 +246,29 @@ html {
         grid-template-rows: 1fr;
     }
 
-    /*  COURSES  */
-
-    .courseCard {
-        width: calc(50% - 1rem);
+    .heroTextContainer .title {
+        font-size: 7rem;
     }
 
-    .courseCard .title {
-        height: fil-available;
+    .heroTextContainer .subtitle {
+        font-size: 2.5rem;
+    }
+
+    .heroTextContainer .text {
+        font-size: 1.1rem;
+    }
+
+    .heroContainer .logo img {
+        height: auto;
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
+
+    /*  FOOTER  */
+
+    .footer .social {
+        width: 50%;
     }
 }
 
@@ -270,6 +292,15 @@ html {
     .pastCourses > .title, .activeCourses > .title {
         font-size: 2rem;
     }
+
+    .courseCard {
+        width: calc(50% - 1rem);
+    }
+
+    .courseCard .title {
+        font-size: 1.5rem;
+        height: fil-available;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -286,25 +317,209 @@ html {
     .heroTextContainer .text {
         font-size: 1.3rem;
     }
+
+    /*  COURSES  */
+
+    .activeCourses, .pastCourses {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    /*  FOOTER  */
+
+    .footer .social {
+        width: 30%;
+    }
+
+    .footer .social a {
+        height: 4rem;
+    }
+
+    .footer .copyright {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     /*  HERO  */
-
+    
     .heroTextContainer .title {
         font-size: 10rem;
     }
-
+    
     .heroTextContainer .subtitle {
         font-size: 4rem;
     }
-
+    
     .heroTextContainer .text {
         font-size: 1.3rem;
     }
+    
+    /*  COURSES  */
+    
+    .activeCourses, .pastCourses {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .courseCard {
+        width: calc(33% - 2rem);
+    }
 
+    .pastCourses > .title, .activeCourses > .title {
+        font-size: 2.5rem;
+    }
+
+    .courseCard .title {
+        font-size: 1.8rem;
+    }
+
+    .courseCard .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .courseCard .description, .courseCard .button {
+        font-size: 1.2rem;
+    }
+    
 }
 
+@media screen and (min-width: 1440px) {
+
+    /*  HERO  */
+    
+    .heroTextContainer .title {
+        font-size: 11rem;
+    }
+    
+    .heroTextContainer .subtitle {
+        font-size: 4.5rem;
+    }
+    
+    .heroTextContainer .text {
+        font-size: 1.5rem;
+    }
+    
+    .heroContainer .logo img {
+        width: 90%;
+    }
+
+    /*  COURSES  */
+    
+    .activeCourses, .pastCourses {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    /*  FOOTER  */
+
+    .footer .social a {
+        height: 5rem;
+    }
+
+    .footer .copyright {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    /*  HERO  */
+    
+    .heroTextContainer .title {
+        font-size: 12rem;
+    }
+    
+    .heroTextContainer .subtitle {
+        font-size: 5rem;
+    }
+    
+    .heroTextContainer .text {
+        font-size: 1.8rem;
+    }
+    
+    .heroContainer .logo img {
+        width: 90%;
+    }
+
+    /*  COURSES  */
+
+    .pastCourses > .title, .activeCourses > .title {
+        font-size: 3rem;
+    }
+
+    .courseCard .title {
+        font-size: 2rem;
+    }
+
+    .courseCard .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .courseCard .description, .courseCard .button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+
+    /*  HERO  */
+    
+    .heroTextContainer .title {
+        font-size: 13rem;
+    }
+    
+    .heroTextContainer .subtitle {
+        font-size: 5.5rem;
+    }
+    
+    .heroTextContainer .text {
+        font-size: 2rem;
+    }
+    
+    .heroContainer .logo img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+
+    /*  HERO  */
+    
+    .heroTextContainer .title {
+        font-size: 14rem;
+    }
+    
+    .heroTextContainer .subtitle {
+        font-size: 6rem;
+    }
+    
+    .heroTextContainer .text {
+        font-size: 2.3rem;
+    }
+    
+    .heroContainer .logo img {
+        width: 80%;
+    }
+
+    /*  COURSES  */
+
+    .pastCourses > .title, .activeCourses > .title {
+        font-size: 3.5rem;
+    }
+
+    .courseCard .title {
+        font-size: 2.3rem;
+    }
+
+    .courseCard .subtitle {
+        font-size: 2rem;
+    }
+
+    .courseCard .description, .courseCard .button {
+        font-size: 1.8rem;
+    }
+}
 
 
 
