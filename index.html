@@ -9,29 +9,27 @@
     
     <title>ESFM CPC</title>
     
-    <link rel="stylesheet" href="./css/stilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
 
 </head>
 <body>
-    
-    
-    <header class="headerLanding">
-        <div class="wrapLogo">
-            <img class="logoHeader" src="/static/JAGURA2.png" alt="JAGURA logo">
-        </div>
-    </header>
 
-    <section class="heroSection">
-
-        <div class="wrapHero">
-            <h1 class="tittle">CLUB DE PROGRAMACIÓN COMPETITIVA</h1>
-            <p class="paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ratione labore recusandae sapiente quam architecto non consequatur praesentium natus beatae illo at ex delectus modi voluptate, fugiat aperiam. Voluptatum, libero.
+    <section class="heroContainer">
+        <div class="heroTextContainer">
+            <h1 class="title">CLUB</h1>
+            <h2 class="subtitle first">PROGRAMACIÓN</h2>
+            <h2 class="subtitle second">COMPETITIVA</h2>
+            <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ratione labore recusandae sapiente.
             </p>
-            <div class="wrapCta">
-                <a href="/" class="ctaA">Unete</a>
+            <!-- <div class="SwrapCta">
+                <a href="/" class="SctaA">Unete</a>
+            </div> -->
             </div>
         </div>
+
+        <figure class="logo"></figure>
 
     </section>
 
@@ -57,128 +55,78 @@
         </div>
     </section> -->
 
-    <section class="section serviciosSection">
+    <section class="activeCourses">
 
-        <div class="wrapTittle">
-            <h2 class="subtittle">CURSOS ACTIVOS</h2>
-        </div>
+        <h2 class="title">Cursos activos</h2>
 
-        <div class="wrapServicios">
+        <article class="courseCard">
+            <h3 class="title">Programación C++</h3>
+            <figure class="icon">
+                <img src="static/c++.svg" alt="C++">
+            </figure>
+            <h4 class="subtitle">Aprende C++ de 0</h4>
+            <p class="description">Mi primer problema en Codeforces</p>
+            <a href="#" class="button summary">Temario</a>
+            <a href="#" class="button enroll">Inscribete</a>
+        </article>
 
-            <div class="itemServicios">
-                <div class="price__element">
+        <article class="courseCard">
+            <h3 class="title">Desarrollo Web</h3>
+            <figure class="icon">
+                <img src="/static/web.png" alt="C++">
+            </figure>
+            <h4 class="subtitle">Front y Back end</h4>
+            <p class="description">Construye tu primer sitio web</p>
+            <a href="#" class="button summary">Temario</a>
+            <a href="#" class="button enroll">Inscribete</a>
+        </article>
 
-                    <h1 class="price__features">Programación C++</h1>
+        <article class="courseCard">
+            <h3 class="title">Electronica</h3>
+            <figure class="icon">
+                <img src="static/circuito_full.png" alt="C++">
+            </figure>
+            <h4 class="subtitle">Analógica y digital</h4>
+            <p class="description">Programacion de microcontroladores</p>
+            <a href="#" class="button summary">Temario</a>
+            <a href="#" class="button enroll">Inscribete</a>
+        </article>
+    </section>
+    
+    <section class="pastCourses">
 
-                    <div class="itemCursos">
-                        <img src="./static/c++.svg" alt="Leonardo" class="cursos">
-                    </div>
+        <h2 class="title">Cursos Previos</h2>
 
-                    <div class="price__items">
-                        <p class="price__features">Aprende C++ de 0</p>
-                        <p class="price__features">Mi primer problema en Codeforces</p>
-                        <p class="price__features">Temario</p>
-                    </div>
-                    <a href="#" class="price__cta">Inscribete</a>
-                
-                </div>
-            </div>
-            
-            <div class="itemServicios">
-                <div class="price__element">
+        <article class="courseCard">
+            <h3 class="title">AZ-900</h3>
+            <figure class="icon">
+                <img src="static/circuito_mini.png" alt="C++">
+            </figure>
+            <a href="#" class="button summary">Temario</a>
+        </article>
 
-                    <h1 class="price__features">Desarrollo Web</h1>
+        <article class="courseCard">
+            <h3 class="title">AZ-204</h3>
+            <figure class="icon">
+                <img src="/static/circuito_mini.png" alt="C++">
+            </figure>
+            <a href="#" class="button summary">Temario</a>
+        </article>
 
-                    <div class="itemCursos">
-                        <img src="./static/web.png" alt="Leonardo" class="cursos">
-                    </div>
-
-                    <div class="price__items">
-                        <p class="price__features">Front end</p>
-                        <p class="price__features">Back end</p>
-                        <p class="price__features">Temario</p>
-                    </div>
-                    <a href="#" class="price__cta">Inscribete</a>
-                
-                </div>
-            </div>
-            
-            <div class="itemServicios">
-                <div class="price__element">
-
-                    <h1 class="price__features" >Electronica</h1>
-                    
-                    <div class="itemCursos">
-                        <img src="./static/circuito_full.png" alt="Leonardo" class="cursos">
-                    </div>
-
-                    <div class="price__items">
-                        <p class="price__features">Electronica analógica y digital</p>
-                        <p class="price__features">Programacion de microcontroladores</p>
-                        <p class="price__features">Temario</p> 
-                    </div>
-                    <a href="#" class="price__cta">Inscribete</a>
-                
-                </div>
-            </div>
-        
-        </div>
-
+        <article class="courseCard">
+            <h3 class="title">C++</h3>
+            <figure class="icon">
+                <img src="static/circuito_mini.png" alt="C++">
+            </figure>
+            <a href="#" class="button summary">Temario</a>
+        </article>
     </section>
 
-    <section class="section serviciosSection">
-
-        <div class="wrapTittle">
-            <h2 class="subtittle">CURSOS PREVIOS</h2>
-        </div>
-
-        <div class="wrapServicios">
-
-            <div class="itemServicios">
-                <div class="price__element">
-
-                    <h1 class="price__features">AZ-900</h1>
-
-                    <div class="itemCursos">
-                        <img src="./static/circuito_mini.png" alt="Leonardo" class="cursos">
-                    </div>
-                    <a href="#" class="price__cta">Temario</a>
-                </div>
-            </div>
-            
-            <div class="itemServicios">
-                <div class="price__element">
-
-                    <h1 class="price__features">AZ-204</h1>
-                    
-                    <div class="itemCursos">
-                        <img src="./static/circuito_mini.png" alt="Leonardo" class="cursos">
-                    </div>
-                    <a href="#" class="price__cta">Temario</a>
-                </div>
-            </div>
-            
-            <div class="itemServicios">
-                <div class="price__element">
-
-                    <h1 class="price__features">C++</h1>
-
-                    <div class="itemCursos">
-                        <img src="./static/circuito_mini.png" alt="Leonardo" class="cursos">
-                    </div>
-                    <a href="#" class="price__cta">Temario</a>
-                </div>
-            </div>
-        
-        </div>
-
-    </section>
-
-    <div class="wrapTittle">
+    <!-- <div class="wrapTittle">
         <h2 class="subtitittle">Caracteristicas de nuestros servicios</h2>
-    </div>
+    </div> -->
 
-    <section class="columnasSection">
+    <!-- <section class="columnasSection">
 
         <div class="wrapColumna">
             <div class="wrapIMg">
@@ -240,47 +188,22 @@
             <img src="./static/olaKanagawa.jpg" alt="">
         </div>
 
-    </section>
+    </section> -->
 
-    <footer class="footerSection">
-        <div class="wrapFooter">
-            <div class="wrapSocial">
-                <ul>
-
-                    <li>
-                        <a href="https://www.facebook.com/algoritmiaesfm">
-                            <img src="./static/fb.svg" alt="" class="socialLogo">
-                        </a>
-                    </li>
-                    <title>Proyectos</title>
-                    <li>
-                        <a href="https://github.com/cpesfm">
-                            <img src="./static/git.svg" alt="" class="socialLogo">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="./static/web.svg" alt="" class="socialLogo">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="./static/whats.svg" alt="" class="socialLogo">
-                        </a>
-                    </li>
-
-                </ul>
-
+    <footer class="footer">
+            <div class="social">
+                <a href="https://www.facebook.com/algoritmiaesfm">
+                    <img src="./static/fb.svg" alt="">
+                </a>
+                <a href="https://github.com/cpesfm">
+                    <img src="./static/git.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./static/whats.svg" alt="">
+                </a>
             </div>
-        </div>
 
-        <div class="menuFooter">
-            <div class="footerCreds">
-                <p>@Copyright 2023 - JAGURA - Todos los derechos reservados. </p>
-            </div>
-        </div>
+            <p class="copyright">@Copyright 2023 - CPESFM - Todos los derechos reservados. </p>
 
     </footer>
 
