@@ -37,7 +37,8 @@ html {
     background-color: #334257;
     justify-items: center;
     width: 100vw;
-    position: relative
+    position: relative;
+    height: 100vh;
 }
 
 .heroTextContainer {
@@ -85,18 +86,18 @@ html {
 }
 
 .heroContainer .logo {
-    width: 100%;
+    width: auto;
     height: 100%;
     margin-top: .5rem;
-    position: relative;
+    position: absolute;
+    z-index: -1;
+    bottom: -10%;
+    right: -10%;
 }
 
 .heroContainer .logo img {
-    height: auto;
-    width: 60%;
-    right: 10%;
-    top: 0;
-    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -229,13 +230,6 @@ html {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    
-    .heroContainer .logo img {
-        height: auto;
-        width: 100%;
-        right: 0;
-        top: 10%;
-    }
 }
 
 @media screen and (min-width: 600px) {
@@ -256,13 +250,6 @@ html {
 
     .heroTextContainer .text {
         font-size: 1.1rem;
-    }
-
-    .heroContainer .logo img {
-        height: auto;
-        width: 100%;
-        right: 0;
-        top: 0;
     }
 
     /*  FOOTER  */
@@ -399,10 +386,6 @@ html {
     .heroTextContainer .text {
         font-size: 1.5rem;
     }
-    
-    .heroContainer .logo img {
-        width: 90%;
-    }
 
     /*  COURSES  */
     
@@ -436,10 +419,6 @@ html {
     
     .heroTextContainer .text {
         font-size: 1.8rem;
-    }
-    
-    .heroContainer .logo img {
-        width: 90%;
     }
 
     /*  COURSES  */
@@ -476,10 +455,6 @@ html {
     .heroTextContainer .text {
         font-size: 2rem;
     }
-    
-    .heroContainer .logo img {
-        width: 80%;
-    }
 }
 
 @media screen and (min-width: 2300px) {
@@ -496,10 +471,6 @@ html {
     
     .heroTextContainer .text {
         font-size: 2.3rem;
-    }
-    
-    .heroContainer .logo img {
-        width: 80%;
     }
 
     /*  COURSES  */
